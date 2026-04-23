@@ -1,5 +1,7 @@
 #include <iostream>
+int main (int argc, char const *argv[]){
+    while(condition){
 
-int main (argc, argv){
-    return EXIT_SUCCES;
+    }
+    return 0;
 }
