@@ -1,15 +1,13 @@
 #include <iostream>
+#include <SerieFoco.hpp>
 #include <Foco.hpp>
 
 int main (int argc, char const *argv[]){
-    Foco foquito;
+    SerieFoco serie;
+    serie.EncenderFocos();
+    serie.MostrarFocos();
+    serie.ApagarFocos();
+    serie.MostrarFocos();
 
-    foquito.Encender();
-    foquito.Apagar();
-
-    std :: cout 
-    << "Estado del foco: " 
-    << foquito.LeerEstado()
-    << std :: endl;
-    return 0;
+ return 0;
 }
