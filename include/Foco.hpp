@@ -8,17 +8,17 @@ private:
 
 public:
     Foco() {
-        this->encendido = false;
+        this->encendido = "-";
     }
     ~Foco() {}
     void Encender(){
-        this->encendido = true;
+        this->encendido = "+";
     }
     void Apagar(){
-        this->encendido = false;
+        this->encendido = "-";
     }
-    
-    EstadoFoco LeerEstado(){
+    EstadoFoco LeerEstado() {
         return this->encendido;
     }
-};
+}; 
+

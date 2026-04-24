@@ -5,31 +5,26 @@
 class SerieFocos
 {
 private:
-     Foco focos[10];
-    
+    Foco focos[10];
 public:
     SerieFocos() {}
     ~SerieFocos() {}
     void MostrarFocos(){
-        for (auto &&f : focos)
-        {
-            std::cout<<f.LeerEstado();
+        for (auto &&f : focos){
+            std::cout << f.LeerEstado();
         }
         std::cout << std::endl;
     }
 
     void EncenderFocos(){
-        for (auto &&f : focos)
-        {
-            f.Encender(); 
+        for (auto &&f : focos){
+            f.Encender();
         }
-        
     }
+
     void ApagarFocos(){
-        for (auto &&f : focos)
-        {
+        for (auto &&f : focos){
             f.Apagar();
         }
-        
     }
 };
