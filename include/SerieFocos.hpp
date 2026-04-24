@@ -1,25 +1,27 @@
 #pragma once
-#include <Foco.hpp>
 #include <iostream>
+#include <Foco.hpp>
 
-class SerieFoco
+class SerieFocos
 {
 private:
-    Foco focos[10];
+     Foco focos[10];
+    
 public:
-    SerieFoco();
-    ~SerieFoco();
+    SerieFocos() {}
+    ~SerieFocos() {}
     void MostrarFocos(){
         for (auto &&f : focos)
         {
-            std :: cout << f.LeerEstado();
+            std::cout<<f.LeerEstado();
         }
-        std :: cout << std::endl;
+        std::cout << std::endl;
     }
+
     void EncenderFocos(){
         for (auto &&f : focos)
         {
-            f.Encender();
+            f.Encender(); 
         }
         
     }

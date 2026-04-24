@@ -5,18 +5,20 @@ class Foco
 {
 private:
     EstadoFoco encendido;
+
 public:
-    Foco(){
-        this -> encendido = false;
-    };
-    ~Foco(){};
+    Foco() {
+        this->encendido = false;
+    }
+    ~Foco() {}
     void Encender(){
-        this -> encendido = true;
+        this->encendido = true;
     }
     void Apagar(){
-        this -> encendido = false;
+        this->encendido = false;
     }
+    
     EstadoFoco LeerEstado(){
-        return this -> encendido;
+        return this->encendido;
     }
 };
