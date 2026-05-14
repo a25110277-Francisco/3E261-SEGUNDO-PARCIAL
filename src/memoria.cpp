@@ -29,5 +29,12 @@ int main(){
     cout << &direccion << endl; // dirección de la memoria
     cout << *direccion << endl;
 
+    cout << malloc(4) << endl;
+    int * dir = (int *) malloc(sizeof(int));//memoria dinamica en c
+    *dir = 7;
+    cout << *dir << endl;
+
+    int* dir2 = new int;//memoria dinamica en c++
+
     return 0;
 }
