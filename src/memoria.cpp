@@ -1,4 +1,4 @@
-//memoria estatica
+ //memoria estatica
 
 #include <iostream>
 using namespace std;
